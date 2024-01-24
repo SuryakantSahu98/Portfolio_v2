@@ -1,0 +1,161 @@
+/*======== CSS Reset ===*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*========================================== Using New font ==================================*/
+@font-face {
+  font-family: Exile71;
+  src: url("../assets/fonts/Exile\ 71.ttf") format("truetype");
+}
+
+
+/*=========================================== Re Usable Animations ======================================*/
+
+/* for underline effect on links */
+.underline-hover {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-hover::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  height: 1.5px;
+  background-color: var(--bs-body-color);
+  transition: width 0.25s ease-out;
+}
+
+.underline-hover:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* For text up and down animation on hover over projects */
+
+@keyframes slideUpAndDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  25% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+
+  75% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.text-brezier:hover {
+  animation: slideUpAndDown 0.5s linear 1;
+}
+
+/*=========================================== Body ======================================*/
+
+body {
+  font-family: "Questrial", sans-serif !important;
+  background-color: #E6E6E6 !important;
+}
+
+h1,
+h3 {
+  font-family: Exile71;
+}
+
+.top-border {
+  border-top: 1px solid var(--bs-body-color);
+}
+
+
+
+a {
+  color: var(--bs-body-color) !important;
+}
+
+/*========================================= Navbar ==============================================*/
+
+nav {
+  background-color: #E6E6E6;
+}
+
+.nav-link {
+  color: var(--bs-body-color) !important;
+}
+
+/* .navbar{
+  backdrop-filter: blur(10px);
+} */
+
+.navbar-toggler{
+  border: none !important;
+}
+
+/*========================================= Hero Section =======================================*/
+h1 {
+  font-size: 6vw !important;
+  line-height: 1 !important;
+}
+
+.hero-section {
+  height: 30vw;
+  margin-bottom: 8vw;
+}
+
+/* .hero-section::before {
+  content: '';
+  background: url('../assets/images/blob.png') no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+} */
+
+.hero-section svg {
+  width: 6vw;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+
+/*======================================== Recent Works ======================================*/
+.recent-works {
+  margin-bottom: 10vw;
+}
+
+.arrow-icon svg {
+  width: 5vw;
+  height: auto;
+  transform: rotate(-135deg);
+}
+
+h3 {
+  font-size: 4.5vw !important;
+  color: var(--bs-body-color);
+}
+
+/*======================================== About Section ====================================*/
+
+
+/*======================================== Contact Me ====================================*/
