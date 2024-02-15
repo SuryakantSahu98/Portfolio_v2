@@ -17,15 +17,14 @@
 <body class="m-4">
 
   <!---------------------------------- Splash Screen ----------------------------------->
-  <div class="splash d-flex flex-column">
+  <!-- <div class="splash d-flex flex-column">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
     <div class="loader-gif">
       <dotlottie-player src="https://lottie.host/d383fec0-bb65-4ef5-923e-0423140ab92f/m2nIC8hsfF.json"
         background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
-      <p class="text-center">Hang tight! Unleashing creativity in 3...2...1...</p>
     </div>
-  </div>
+  </div> -->
 
 
   <!---------------------------------- Nav Bar ----------------------------------->
@@ -41,21 +40,23 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"">
         <ul class=" navbar-nav mr-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link underline-hover" href="#">WORKS</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link underline-hover" href="./works.html">WORKS</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link underline-hover" href="#">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline-hover" href="#">RESUME</a>
+          <a class="nav-link underline-hover" href="./assets/resume/Suryakant Sahu.pdf" target="_blank">RESUME</a>
         </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  
+  <!---------------------------------- Hero Section ----------------------------------->
   <main>
-    <!---------------------------------- Hero Section ----------------------------------->
     <div class="hero-section d-flex align-items-center">
       <h1>I'M A UI+UX DESIGNER</h1>
     </div>
@@ -64,9 +65,30 @@
     <section>
       <!---------------------------------- Recent Works ----------------------------------->
       <div class="recent-works-section">
-        <div class="recent-works top-border pt-4">
+        <div class="recent-works top-border pt-4 row align-items-center">
           <div class="col-sm-6 col-12">
             <h3>01 &rarr;</h3>
+            <div class="inner-text">
+              <a href="#" class="text-decoration-none">
+                <h3 id="image1"
+                  onmouseover="showImage('image1','https://cdn.sanity.io/images/649acgfm/production/6da0724185ada78281d89cf5496fa105fb5c4e75-2244x1632.jpg?auto=format&w=1920')"
+                  onmouseout="hideImage('image1')">
+                  MOBILE APP REVAMP</h3>
+              </a>
+            </div>
+          </div>
+
+          <!-- To be removed for image function to show on hover -->
+          <div class="col-sm-6 col-12 mt-3">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/VoucherCreationMobile.png" alt="Mobile App Voucher" class="img-fluid">
+              </a>
+          </div>
+          <!-- To be removed for image function to show on hover -->
+
+        </div>
+        <div class="recent-works top-border pt-4 row align-items-center">
+          <div class="col-sm-6 col-12">
+            <h3>02 &rarr;</h3>
             <div class="inner-text">
               <a href="#" class="text-decoration-none">
                 <h3 id="image1"
@@ -76,33 +98,58 @@
               </a>
             </div>
           </div>
+
+          <!-- To be removed for image function to show on hover -->
+          <div class="col-sm-6 col-12 mt-3">
+              <a href="#" class="text-decoration-none"><img src="./assets/images/Website.png" alt="Mobile App Voucher" class="img-fluid">
+              </a>
+          </div>
+          <!-- To be removed for image function to show on hover -->
+
         </div>
-        <div class="recent-works top-border pt-4">
+        <div class="recent-works top-border pt-4 row align-items-center">
           <div class="col-sm-6 col-12">
-            <h3>01 &rarr;</h3>
+            <h3>03 &rarr;</h3>
             <div class="inner-text">
-              <a href="#" class="text-decoration-none">
-                <h3 id="image2"
-                  onmouseover="showImage('image2','https://cdn.sanity.io/images/649acgfm/production/6da0724185ada78281d89cf5496fa105fb5c4e75-2244x1632.jpg?auto=format&w=1920')"
-                  onmouseout="hideImage('image2')">
-                  WEBSITE REDESIGN</h3>
+              <a href="https://www.behance.net/gallery/157016909/My-Food-Food-delivery-app-UX-Case-Study" class="text-decoration-none" target="_blank">
+                <h3 id="image1"
+                  onmouseover="showImage('image1','https://cdn.sanity.io/images/649acgfm/production/6da0724185ada78281d89cf5496fa105fb5c4e75-2244x1632.jpg?auto=format&w=1920')"
+                  onmouseout="hideImage('image1')">
+                  FOOD ORDERING APP</h3>
               </a>
             </div>
           </div>
+
+          <!-- To be removed for image function to show on hover -->
+          <div class="col-sm-6 col-12 mt-3">
+              <a href="https://www.behance.net/gallery/157016909/My-Food-Food-delivery-app-UX-Case-Study" class="text-decoration-none" target="_blank"><img src="./assets/images/food app.png" alt="Mobile App Voucher" class="img-fluid">
+              </a>
+          </div>
+          <!-- To be removed for image function to show on hover -->
+
         </div>
-        <div class="recent-works top-border pt-4">
+        <div class="recent-works top-border pt-4 row align-items-center">
           <div class="col-sm-6 col-12">
-            <h3>01 &rarr;</h3>
+            <h3>04 &rarr;</h3>
             <div class="inner-text">
-              <a href="#" class="text-decoration-none">
-                <h3 id="image3"
-                  onmouseover="showImage('image3','https://cdn.sanity.io/images/649acgfm/production/6da0724185ada78281d89cf5496fa105fb5c4e75-2244x1632.jpg?auto=format&w=1920')"
-                  onmouseout="hideImage('image3')">
-                  WEBSITE REDESIGN</h3>
+              <a href="https://www.behance.net/gallery/158149035/3D-Artworks" class="text-decoration-none" target="_blank">
+                <h3 id="image1"
+                  onmouseover="showImage('image1','https://cdn.sanity.io/images/649acgfm/production/6da0724185ada78281d89cf5496fa105fb5c4e75-2244x1632.jpg?auto=format&w=1920')"
+                  onmouseout="hideImage('image1')">
+                  3D ARTWORK</h3>
               </a>
             </div>
           </div>
+
+          <!-- To be removed for image function to show on hover -->
+          <div class="col-sm-6 col-12 mt-3">
+              <a href="https://www.behance.net/gallery/158149035/3D-Artworks" class="text-decoration-none" target="_blank"><img src="./assets/images/3D works.png" alt="Mobile App Voucher" class="img-fluid">
+              </a>
+          </div>
+          <!-- To be removed for image function to show on hover -->
+
         </div>
+        
       </div>
 
       <!---------------------------------- Bottom Nav ----------------------------------->
@@ -110,18 +157,18 @@
         <div class="container-fluid">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link underline-hover" href="#">LINKEDIN</a>
+              <a class="nav-link underline-hover" href="https://www.linkedin.com/in/suryakant-sahu/" target="_blank">LINKEDIN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link underline-hover" href="#">BEHANCE</a>
+              <a class="nav-link underline-hover" href="https://www.behance.net/suryakant_sahu" target="_blank">BEHANCE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link underline-hover" href="#">DRIBBLE</a>
+              <a class="nav-link underline-hover" href="https://github.com/SuryakantSahu98" target="_blank">GITHUB</a>
             </li>
           </ul>
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link underline-hover" href="#">ABOVE THE FOLD</a>
+              <a class="nav-link underline-hover" href="#">BACK TO TOP</a>
             </li>
           </ul>
         </div>
@@ -129,11 +176,11 @@
 
       <!---------------------------------- Footer ----------------------------------->
       <footer>
-        <p class="text-center">
+        <!-- <p class="text-center">
           Design Inspired from
           <a class="underline-hover text-decoration-none" href="https://www.chriswilcock.co/" target="_blank">Chris
             Wilcock</a>
-        </p>
+        </p> -->
       </footer>
     </section>
   </main>
